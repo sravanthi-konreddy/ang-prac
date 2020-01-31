@@ -1,0 +1,10 @@
+<p>
+  welcome {{user}}
+</p>
+<div *ngFor="let book of data" class="col-sm-4 panel panel-default">
+  <img src="\assets\images\{{book.id}}.JPG" alt="image not found" height="120" width="100">
+  <p>{{book.id}}</p>
+  <p>{{book.title}}</p>
+  <p>{{book.author}}</p>
+</div>
+<a routerLink="/logout"><button>logout</button></a>
